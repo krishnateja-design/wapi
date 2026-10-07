@@ -1,0 +1,216 @@
+body{
+    margin:0;
+    padding:0;
+
+    font-family:Arial, sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    min-height:100vh;
+}
+
+/* CENTER CONTAINER */
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+/* CARD */
+
+.profile-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    width:350px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+    animation:fadeIn 0.5s ease;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* AVATAR */
+
+.avatar{
+    font-size:70px;
+    margin-bottom:10px;
+}
+
+/* HEADINGS */
+
+h1{
+    color:#333;
+    margin-bottom:25px;
+}
+
+/* TEXT INFO */
+
+.info{
+    font-size:18px;
+    color:#555;
+    margin:10px 0;
+}
+
+/* FORM */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+/* INPUTS */
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+/* INPUT FOCUS */
+
+input:focus{
+
+    border-color:#667eea;
+
+    box-shadow:0 0 8px rgba(102,126,234,0.4);
+}
+
+/* BUTTON GROUP */
+
+.btn-group{
+    margin-top:20px;
+}
+
+/* BUTTONS */
+
+button{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* LOGIN BUTTON */
+
+.edit-btn{
+    background:#3498db;
+    color:white;
+}
+
+/* PASSWORD BUTTON */
+
+.pass-btn{
+    background:#f39c12;
+    color:white;
+}
+
+/* LOGOUT BUTTON */
+
+.logout-btn{
+    background:#e74c3c;
+    color:white;
+}
+
+/* BUTTON HOVER */
+
+button:hover{
+
+    opacity:0.95;
+
+    transform:translateY(-2px);
+}
+
+/* ERROR MESSAGE */
+
+.error{
+
+    color:red;
+
+    margin-top:10px;
+
+    font-size:14px;
+}
+
+/* LINKS */
+
+a{
+
+    color:#667eea;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+/* LINK HOVER */
+
+a:hover{
+
+    text-decoration:underline;
+}
+
+/* PARAGRAPH */
+
+p{
+
+    margin-top:20px;
+
+    color:#555;
+}

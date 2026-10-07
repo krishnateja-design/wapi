@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Edit Profile</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile-card">
+
+        <h1>
+            ✏️ Edit Profile
+        </h1>
+
+        {% if error %}
+            <p style="color:red;">
+                {{ error }}
+            </p>
+        {% endif %}
+
+        <form method="POST">
+
+            <input type="text"
+                   name="username"
+                   value="{{ user.username }}"
+                   required>
+
+            <button class="edit-btn"
+                    type="submit">
+
+                Save Changes
+
+            </button>
+
+        </form>
+
+        <a href="/dashboard">
+
+            <button class="logout-btn">
+
+                🔙 Back
+
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

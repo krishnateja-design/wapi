@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile-card">
+
+        <div class="avatar">
+            👤
+        </div>
+
+        <h1>
+            Welcome {{ user.username }} 🎉
+        </h1>
+
+        <p class="info">
+            🆔 User ID : {{ user.id }}
+        </p>
+
+        <p class="info">
+            📧 Username : {{ user.username }}
+        </p>
+
+        <p class="info">
+            🌍 Status : Active
+        </p>
+
+        <div class="btn-group">
+
+            <a href="/edit-profile">
+
+                <button class="edit-btn">
+
+                    ✏️ Edit Profile
+
+                </button>
+
+            </a>
+
+            <a href="/change-password">
+
+                <button class="pass-btn">
+
+                    🔒 Change Password
+
+                </button>
+
+            </a>
+
+            <a href="/api/logout">
+
+                <button class="logout-btn">
+
+                    🚪 Logout
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
